@@ -1,0 +1,6 @@
+[submodule "plugins"]
+	path = plugins
+	url = https://github.com/emontzkajnl/plugins.git
+[submodule "themes/ag-site-theme"]
+	path = themes/ag-site-theme
+	url = https://github.com/emontzkajnl/ag-site-theme.git

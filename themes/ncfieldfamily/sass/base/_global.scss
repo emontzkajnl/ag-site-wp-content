@@ -1,0 +1,104 @@
+body {
+    // background: $offwhite;
+    background-color: white;
+}
+body, button, input, select, optgroup, textarea {
+    font-family: freight-text-pro, serif;
+    font-size: 1.375rem;
+}
+.site-main {
+    padding-top: 100px;
+}
+.entry-content {
+    margin-top: 0;
+    p {
+        margin-bottom: 20px;
+        font-size: 1.275rem;
+    }
+}
+.ncff-adlabel {
+    font-size: 10px;
+    text-align: center;
+    color: #ccc;
+    padding-bottom: 4px;
+}
+.offwhite-bkgrnd {
+    background-color: rgba(100, 117, 97, 0.3);
+    &.ncff-top-leaderboard {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+.ncff-top-leaderboard {
+    text-align: center;
+}
+.home {
+    overflow-x: hidden;
+    .entry-content  {
+        > * {
+            // max-width: unset;
+            // padding: 0;
+        }
+    }
+}
+// any white section with a shadow
+.nc-panel {
+    background-color: white;
+    box-shadow: 0px 0px 5px #b5b5b5;
+}
+button {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    min-width: 200px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background: $mediumolive;
+    text-transform: uppercase;
+}
+//make contained inline image act like background image
+.object-fit-image {
+    position: relative;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}
+
+
+hr.green-hr {
+    background-color: $olive;
+}
+a[title=Instagram] {
+    img {
+        background-color: orangered;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .ag-site-sidebar-layout  {
+        &.column-reverse {
+            flex-direction: column-reverse;
+        }
+    }
+}
+@media all and (min-width: 768px) {
+    .ag-site-sidebar-layout {
+        .wp-block-column {
+            &:last-child {
+                flex-grow: 0;
+            }
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+}

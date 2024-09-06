@@ -1,0 +1,29 @@
+
+.ag-featured-post-sidebar .faps-title {
+    font-family: "acumin-pro-semi-condensed", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+.nav-container {
+    max-width: 1366px;
+}
+.site-header {
+    .site-branding {
+        width: 200px;
+    }
+    img {
+        margin-top: 15px;
+    }
+}
+.site-main {
+    padding-top: 90px;
+}
+.byline, .posted-on {
+    font-family: acumin-pro, sans-serif; 
+    font-size: 1.25rem;
+}
+@media all and (min-width: 550px) {
+    .site-branding {
+        width: 225px;
+    }
+}

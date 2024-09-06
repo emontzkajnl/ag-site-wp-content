@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*
+Theme Name: NC Field & Family 2
+Theme URI: https://ncfieldandfamily.com
+Author: Journal Communications
+Author URI:     http://jnlcom.com/
+Description: New Child theme for NC Field & Family
+Template: ag-site-theme
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ncff
+*/
+
+@import "base/colors";
+@import "base/fonts";
+@import "base/global";
+@import "base/headings";
+@import "base/header";
+@import "base/navigation";
+@import "base/footer";
+@import "base/comments";
+@import "base/blocks";
+@import "base/pagesandposts";
+@import "base/events";

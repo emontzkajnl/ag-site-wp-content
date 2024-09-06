@@ -1,0 +1,154 @@
+{
+    "key": "group_5bb245e39a4bf",
+    "title": "Footer Widgets (old)",
+    "fields": [
+        {
+            "key": "field_52a88dc1149f7",
+            "label": "Instructions & Notes",
+            "name": "instructions",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add instructions or notes to this section by clicking \"Add Line\" and entering your text. Be sure to click \"Save Options\" in the top right when you're done.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Row",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_52a88e4297866",
+                    "label": "--",
+                    "name": "instruction_line",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": "",
+                    "parent_repeater": "field_52a88dc1149f7"
+                }
+            ],
+            "rows_per_page": 20
+        },
+        {
+            "key": "field_52a789f708f3b",
+            "label": "Footer Widget Middle Title",
+            "name": "footer_widget_middle_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "The title of the middle footer widget. Max: 34 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": 26
+        },
+        {
+            "key": "field_52a78a0508f3c",
+            "label": "Footer Widget Middle Content",
+            "name": "footer_widget_middle_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Enter the content for the footer's middle widget",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_52a78a1e08f3d",
+            "label": "Footer Widget Right Title",
+            "name": "footer_widget_right_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "The title of the right footer widget. Max: 34 characters",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": 26
+        },
+        {
+            "key": "field_52a78a8674e95",
+            "label": "Footer Widget Right Content",
+            "name": "footer_widget_right_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1698087883
+}

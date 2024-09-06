@@ -1,0 +1,112 @@
+
+
+.search-btn {
+    display: none;
+}
+.nav-container {
+    .mfc-social-icons {
+        display: none;
+    }
+}
+.bar {
+    background-color: white;
+}
+.hamburger {
+    position: absolute;
+    right: 10px;
+}
+@media screen and (max-width: 1180px) {
+    .nav-container {
+        &.toggled {
+            background-color: $blue;
+            .mfc-social-icons {
+                display: flex;
+            }
+        }
+    }
+    .main-navigation {
+        li {
+            border-bottom: 1px solid white; 
+            a {
+                color: white;
+            }
+            &.menu-item-has-children {
+                &:after {
+                    color: white;
+                }
+                .open-subnav {
+                    ul {
+                        li {
+                            &:first-child {
+                                border-top: 1px solid rgba(255, 255, 255, 0.7);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1181px) {
+    .main-navigation {
+        ul {
+            > li {
+                &:hover {
+                    background: white;
+                    color: $blue !important;
+                    a, > a {
+                        color: $blue;
+                        background-color: white;
+                    }
+                }
+                a {
+                    color: white ;
+                    font-size: 1rem;
+                    padding: 10px;
+                    &:hover {
+                        background: white;
+                        color: $blue !important;
+                    }
+                }
+            }
+            ul {
+                a {
+                    color: $blue;
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    .menu-item-has-children {
+        > a {
+            position: relative;
+            color: white;
+            &::after {
+                content: "";
+                position: absolute;
+                // font-family: 'Font Awesome 5 Free';
+                // opacity: 1;
+                background-image: url('assets/images/arrow-down.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 14px;
+                height: 16px;
+                right: 5px;
+                top: 12px;
+                // font-size: 12px;
+                // transform: rotate(0.5turn);
+            }
+        }
+    
+    }
+    .search-btn {
+        background: transparent;
+        color: white;
+        display: block;
+    }
+    .nav-container {
+        .mfc-social-icons {
+            display: flex;
+        }
+    }
+}

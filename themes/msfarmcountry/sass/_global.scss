@@ -1,0 +1,140 @@
+
+
+button {
+    background-color: $blue;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+a {
+    &:hover, &:active, &:visited {
+        color: $blue;
+    }
+}
+span.required {
+    margin-left: -4px;
+}
+figcaption {
+    font-family: "acumin-pro", sans-serif;
+    font-size: 1rem;
+}
+.mfc-cat-title {
+    font-family: "Muller", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 15px 0 5px 0;
+    > a {
+        color: $blue;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+}
+.handwritten {
+    font-family: "Black-Jack";
+    font-weight: 400;
+    text-transform: lowercase;
+    color: $blue;
+    font-size: 3rem;
+}
+
+.section-heading {
+    font-family: "Muller", Arial, sans-serif;
+    color: $blue;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.mfc-cat-description {
+    font-size: 1.5rem;
+  font-family: "acumin-pro", sans-serif;
+}
+
+
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: $blue;
+    font-family: "acumin-pro", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.mfc-social-icons {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 0;
+    li {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: relative;
+        background-color: $blue;
+        list-style: none;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+        svg {
+            position: absolute;
+            fill: $lightgray;
+        }
+        &.facebook {
+            svg {
+                width: 13px;
+                top: 7px;
+                left: 11px;
+
+            }
+        }
+        &.instagram {
+            svg {
+                width: 19px;
+                top: 6px;
+                left: 8px;
+            }
+        }
+        &.twitter {
+            svg {
+                width: 19px;
+                top: 7px;
+                left: 9px;  
+            }
+        }
+        &.pinterest {
+            svg {
+                width: 17px;
+                top: 6px;
+                left: 9px;
+            }
+        }
+    }
+    a {
+        color: transparent;
+    }
+}
+.site-header {
+    .mfc-social-icons {
+        li {
+            background-color: white;
+            svg {
+                fill: $blue;
+            }
+        }
+    }
+}
+.site-footer {
+    .mfc-social-icons {
+        justify-content: flex-start;
+        li {
+            background-color: transparent;
+            svg {
+                fill: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.site-branding {
+    width: 200px;
+}
+.site-header {
+    // height: 120px;
+    &.headroom--pinned {
+        // height: 120px;
+    }
+    &.headroom--unpinned {
+        // height: 100px;
+    }
+}
+.site-logo {
+    width: 401px;
+}
+.search-btn {
+    display: block;
+    min-width: 0;
+    background: transparent;
+    i {
+        color: white;
+    }
+}
+.bar {
+    background-color: white;
+}
+.header-social {
+    svg {
+        fill: #fff;
+    }
+}
+
+@media screen and (min-width: 1181px) {
+    .site-branding {
+        width: 260px;
+    }
+    .headroom--pinned {
+        .site-logo {
+            width: 260px;
+            transition: all 0.3s;
+        }
+    }
+    .headroom--unpinned {
+        .site-logo {
+            width: 230px;
+            transition: all 0.3s;
+        }
+    }
+
+
+}

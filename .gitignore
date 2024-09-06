@@ -1,0 +1,10 @@
+uploads/*
+cache/*
+advanced-cache.php
+upgrade/*
+**/.DS_store
+mu-plugins/*
+object-cache.php
+debug.log
+node_modules
+wflogs/*

@@ -1,0 +1,168 @@
+.ncff-event-list {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $olive;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    &:first-child {
+        border-top: 1px solid $olive;
+    }
+    &__text-area {
+        padding-left: 30px;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.875rem;
+    }
+    &__date {
+        margin-top: 0;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 1.25rem;
+    }
+    &__location {
+        margin-top: 0;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1.25rem;
+    }
+}
+.date-cube {
+    background-color: $olive;
+    // padding: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 72px;
+    height: 75px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    .month {
+        font-family: proxima-nova, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .day {
+        font-family: proxima-nova, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+}
+.ncff-event-filter {
+
+}
+.searchandfilter {
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            flex-basis: 33.33%;
+            padding-right: 25px;
+            label {
+                width: 100%;
+            }
+            select {
+                width: 100%;
+                min-width: 100%;
+                padding: 10px 0;
+                text-indent: 10px;
+                font-family: proxima-nova, sans-serif;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                background-color: transparent;
+            }
+            input {
+                font-family: proxima-nova, sans-serif;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                color: black;
+                padding: 10px 0;
+                &::placeholder {
+                    text-indent: 15px;
+                }
+            }
+            option {
+                font-family: proxima-nova, sans-serif;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+            }
+            &.sf-field-reset {
+               
+                input {
+                    color: black;
+                    background-color: white;
+                    border: none;
+                    font-family: proxima-nova, sans-serif;
+                    text-transform: uppercase;
+                    font-size: 1.125rem;
+                    cursor: pointer;
+                }
+            }
+            &.sf-field-submit {
+                input {
+                    width: 100%;
+                    background-color: $olive;
+                    color: white;
+                    cursor: pointer;
+                    margin-top: 6px;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}
+.es-title-container {
+    display: flex;
+    align-items: center;
+    .date-cube {
+        margin-right: 20px;
+    }
+}
+.event-meta {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    .event-cat {
+        margin-left: 60px;
+        margin-right: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+.event-cat {
+    font-weight: 700;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.back-to-event-list {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+.event-meta-section {
+    margin-bottom: 40px;
+    p {
+        text-transform: uppercase;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        margin: 10px 0;
+        &.event-cat {
+            font-weight: 700;
+        }
+    }
+}
+.featured-events {
+    background-color: $lightolive;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}

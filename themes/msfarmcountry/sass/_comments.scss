@@ -1,0 +1,43 @@
+#commentform {
+    max-width: 800px;
+}
+.comment-form-author, .comment-form-email, .comment-form-url {
+    label {
+        display: block;
+    }
+}
+#reply-title {
+    font-family: "Muller", Arial, sans-serif;
+    font-size: 1.875rem;
+}
+ul.comment-list {
+    .comment-body {
+        padding: 40px 0;
+        max-width: 768px;
+        p {
+            font-family: "acumin-pro", sans-serif;
+        }
+    }
+    li {
+        font-family: "acumin-pro", sans-serif;
+        &.depth-1 {
+            border-bottom: 1px solid black;
+        }
+        
+    }
+}
+.comment-reply-link {
+    background-color: $blue;
+    color: white;
+    font-family: "acumin-pro", sans-serif;
+    font-size: 1rem;
+    &:hover, &:visited {
+        color: white;
+    }
+}
+#comments {
+	.section-heading {
+		padding-bottom: 20px;
+		border-bottom: 2px solid black;
+	}
+}

@@ -1,0 +1,52 @@
+.site-info {
+    padding-top: 0;
+}
+#menu-footer-menu {
+    text-align: center;
+    margin-left: 0;
+    border-bottom: 1px solid white;
+    padding-left: 0;
+    padding-top: 35px;
+    li {
+        list-style: none;
+        display: block;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: Gabriela, Times, serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        letter-spacing: .1px;
+        &:hover, &:visited, &:focus {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+#colophon {
+    .site-info {
+        padding-top: 45px;
+    }
+}
+
+.left-footer {
+    .site-logo {
+        max-width: 250px;
+        
+    }
+}
+@media all and (min-width: 768px) {
+    #menu-footer-menu {
+        
+            display: flex;
+            justify-content: space-around;
+        
+        li {
+            display: inline-block;
+        }
+    }
+}
+

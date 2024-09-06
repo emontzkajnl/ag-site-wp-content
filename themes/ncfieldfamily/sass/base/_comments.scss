@@ -1,0 +1,67 @@
+.comments-area {
+    font-family: Gabriela, Times New Roman, serif;
+    > * {
+        max-width: 960px;
+    }
+    .ncff-section-title {
+        font-style: italic;
+        font-style: 1.875rem;
+        border-bottom: 2px solid black;
+    }
+    .comment-reply-title {
+        font-family: Gabriela;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 1.875rem;
+        font-weight: 400;
+    }
+}
+ul.comment-list {
+    padding-left: 0;
+    margin-left: 0;
+    li {
+        list-style: none;
+    }
+    > li {
+        border-bottom: 1px solid black;
+    }
+    cite.fn {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.125rem;
+    }
+    .comment-author {
+        display: inline-block;
+    }
+    .comment-meta {
+        display: inline-block;
+        padding-left: 15px;
+        font-size: 1.125rem;
+    }
+    .comment-reply-link {
+        color: white;
+        background-color: $mediumolive;
+        padding: 5px 40px;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: Gabriela, Times New Roman, serif;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    .comment-body {
+        padding: 40px 0;
+        
+    }
+}
+#commentform {
+    input#submit {
+        text-transform: uppercase;
+        font-family: proxima-nova, sans-serif;
+        border: none;
+    }
+}
+.comment-form-author, .comment-form-email {
+    margin-bottom: .5em;
+}

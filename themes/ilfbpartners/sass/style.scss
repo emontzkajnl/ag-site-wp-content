@@ -1,0 +1,315 @@
+/*
+Theme Name: 	ILFB Partners
+Template: 		ag-site-theme
+Theme URI:      http://ilfbpartners.com/
+Description:    New Child theme for ILFB Partners
+Author:         Journal Communications
+Author URI:     http://jnlcom.com/
+Version:        1.0
+*/
+
+@font-face {
+    font-family: Lora, "Times New Roman", serif;
+    /* font-weight: 400; */
+    src: url('assets/fonts/Lora-Medium.ttf');
+}
+@font-face {
+    font-family: Lora-Bold;
+    font-weight: 700;
+    src: url('assets/fonts/Lora-Bold.ttf');
+}
+
+strong, b {
+    font-family: Lora-Bold;
+    font-weight: 700;
+}
+
+#menu-footer-menu {
+    text-align: center;
+    margin-left: 0;
+    border-bottom: 1px solid white;
+    padding-left: 0;
+}
+#menu-footer-menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#menu-footer-menu a {
+    text-decoration: none;
+}
+#menu-footer-menu a:hover, #menu-footer-menu a:visited, #menu-footer-menu a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+.site-info {
+    padding-top: 15px;
+}
+
+.main-navigation li {
+	font-weight: 400;
+}
+
+
+
+.social-cube .section-heading {
+    color: white;
+}
+.social-cube ul {
+    border-bottom: 1px solid white;
+}
+
+ul.comment-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+.comments-area .section-heading {
+    font-size: 2rem;
+    color: #666;
+
+}
+.comment-list li {
+    background-color: #eeeeee;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.comment-list .children li {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.comment-metadata a, .comment-metadata a:visited {
+    color: #666;
+    text-decoration: none;
+}
+.comment-metadata a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+.reply a, .reply a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.comment-form input, .comment-form textarea {
+    background-color: #fafafa;
+}
+.comment-form input {
+    display: block;
+}
+.comment-form input[type="submit"] {
+    /* background-color: green; */
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.comment-reply-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: #666;
+}
+.home .cat-text, .home .cat-text a {
+    color: #4b4b4b !important;
+}
+.cat-text {
+    font-weight: 400;
+}
+.page-title {
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+.site-footer .header-social li {
+    background-color: white !important;
+    font-size: 14px;
+    height: 27px;
+    width: 27px;
+}
+.site-footer .header-social li.facebook a {
+    left: 9px;
+}
+.site-footer .header-social li.twitter a {
+    left: 7px;
+}
+.site-footer .header-social li.youtube a {
+    left: 6px;
+}
+.left-footer, .right-footer, .middle-footer {
+    padding: 0 38px;
+}
+.comment-list li.pingback {
+    display: none !important;
+}
+/* INFO BOX */
+
+.infobox {
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: Lato, sans-serif;
+  }
+  
+  .infobox.right {
+    margin-left: 20px;
+    float: right;
+  }
+  
+  .infobox.left {
+    margin-right: 20px;
+    float: left;
+  }
+  
+  .infobox.full {
+    float: none;
+    width: 100%;
+    clear: both;
+    margin: 20px 0px;
+  }
+  
+  span.infobox-header {
+    /*	border-bottom: 1px solid #B8B8B8; */
+    background: #006c52;
+    text-align: center;
+    display: block;
+    margin-bottom: 0px;
+    padding: 4px 0px 2px;
+    /*	padding-left:4px; */
+  }
+  .infobox-header h3 {
+    font-weight: normal;
+    letter-spacing: 1px ;
+    color: #fff;
+    line-height: 1;
+  }
+  .infobox-content {
+    background: #eee;
+    padding: 10px 20px 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7em;
+  }
+  
+  .infobox img {
+    margin-top: 10px;
+  }
+
+  .site-branding {
+      width: 230px;
+  }
+  .related-articles {
+    background-color: #eee;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    h3 {
+        font-weight: 400;
+    }
+  }
+@media all and (min-width: 1180px){
+    .menu-item-has-children > a::after {
+        content: '';
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        background-image: url('assets/images/down-arrow.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 5px;
+        right: 0;
+    }
+    .body-mega-hero .menu-item-has-children > a::after {
+        background-image: url('assets/images/white-down-arrow.png');
+    }
+
+}
+.read-the-magazine__text, .read-the-magazine__title,  button,input[type="button"],input[type="reset"],input[type="submit"],
+  figcaption, .page-title {
+     font-family: 'Lato', sans-serif !important;
+ }
+ .post-excerpt {
+    font-family: "Lora", Times New Roman, serif;
+    font-weight: 400;
+ }
+ .theiaPostSlider_slides iframe {
+     width: 100%;
+ }
+ #page .entry-title {
+     margin-bottom: 0;
+     font-weight: 400;
+
+ }
+ label[for="subscribe-reloaded"] {
+     position: relative;
+     left: 40px;
+ }
+ #subscribe-reloaded {
+     position: absolute;
+     left: -35px;
+     top: 7px;
+ }
+ .widget-area .spreaker-player {
+	display: block;
+}
+.widget-area .sidebar-podcast-link {
+	display: none;
+}
+
+.home div[class$="-in-content"] {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ @media all and (min-width: 768px) {
+     #menu-footer-menu li {
+        padding: 15px 30px;
+     }
+     .comment-reply-title {
+         font-size: 2rem;
+     }
+     .widget-area .spreaker-player {
+		display: none;
+	}
+	.widget-area .sidebar-podcast-link {
+	display: block;
+    }
+ }
+@media all and (min-width: 1180px){
+    .middle-footer, .right-footer {
+        border-left: 1px solid white;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .mag-container {
+        display: flex;
+    }
+    .mag-container iframe {
+        max-width: 80%;
+    }
+}
+
+div[id^='div-gpt-ad-'] {
+	width:300px;
+	margin:0 auto 50px;
+}
+div[id^="google_ads_iframe"] {
+    margin: 0 auto;
+    text-align: center;
+}
+.comment-body {
+    p {
+        max-width: 768px;
+    }
+}
+.comment-list {
+    .children {
+        margin-top: 15px;
+    }
+}
+
+.offwhite-bkgrnd {
+    background-color: #eee;
+}
+
+@import "elements/comments";

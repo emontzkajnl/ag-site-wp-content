@@ -1,0 +1,64 @@
+{
+    "key": "group_5bb372285c3ef",
+    "title": "Home Widgets Instructions",
+    "fields": [
+        {
+            "key": "field_5450f4d3d7f4d",
+            "label": "Home Page Notes & Instructions",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h2>Home Page Secondary Posts Section<\/h2>\r\nTo change the category of posts displayed on the homepage in the second section (below Most Recent section), go to Appearance > <a href=\"\/wp-admin\/widgets.php\">Widgets<\/a>:\r\n- Find the box titled \"Homepage Widgets Area\" and click on it to expand\r\n- Click on the box \"Braxton List Widget: to expand\r\n- Change the Title, Category and how many posts will display\r\n- Click the blue save button",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_54aacf68326d9",
+            "label": "Home Page Second Section Title",
+            "name": "home_page_second_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter the title for the second section of the home page",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "contact-info"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1681234529
+}

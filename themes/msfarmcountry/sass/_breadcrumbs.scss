@@ -1,0 +1,22 @@
+#breadcrumbs {
+    margin-top: 0;
+    margin-bottom: .5em;
+     a {
+        text-transform: uppercase;
+        font-family: "Muller", sans-serif;
+        font-size: 1.24rem;
+        color: #d2cdc1;
+        text-decoration: none;
+    }
+    span {
+        font-family: "Muller", sans-serif;
+        font-size: 1.24rem;
+        color: #d2cdc1;
+    }
+    .breadcrumb_last {
+        color: $blue;
+        text-transform: uppercase;
+        font-family: "Muller", sans-serif;
+        font-size: 1.24rem;
+    }
+}
