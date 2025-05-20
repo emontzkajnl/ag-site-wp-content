@@ -1,0 +1,24 @@
+.site-logo {
+    width: 260px;
+}
+
+.site-main {
+    padding-top: 100px;
+}
+
+.entry-content {
+    margin-top: 0;
+}
+.search-btn {
+    display: block;
+    min-width: 0;
+    background: transparent;
+    i {
+        color: white;
+    }
+}
+.site-branding {
+    a {
+        line-height: 0;
+    }
+}

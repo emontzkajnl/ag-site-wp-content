@@ -1,0 +1,64 @@
+body {
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #111;
+    font-style: normal;
+    line-height: 1.875rem;
+}
+
+a {
+    &:hover, &:visited, &:active {
+        color: $darkgreen;
+    }
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border-radius: 0;
+    padding: 0.6em 50px 0.6em;
+    border: none;
+    background-color: #504435;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+}
+
+.tan-bkgrnd {
+    background-color: $tan;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    max-width: unset;
+    > * {
+        max-width: 1366px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .thf-top-leaderboard {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+.thf-top-leaderboard {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.thf-cat-title {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 1.065rem;
+    color: $darkgreen;
+    text-transform: uppercase;
+    border: 1px solid $darkgreen;
+    border-radius: 0;
+    display: inline-block;
+    padding: 5px 10px;
+    line-height: 1;
+    a {
+        text-decoration: none;
+    }
+}

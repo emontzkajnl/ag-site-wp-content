@@ -222,7 +222,6 @@ function addtoany_add_share_services( $services ) {
 add_filter( 'A2A_SHARE_SAVE_services', 'addtoany_add_share_services', 10, 1 );
 
 function load_more_ncff_cats() {
-	// error_log(var_dump($_POST, true));
 	$args = array(
 		'post_type'			=> 'post',
 		// 'cat'				=> $_POST['cat'],
@@ -232,9 +231,11 @@ function load_more_ncff_cats() {
 	);
 	if ($_POST['cat']) {
 		$args['cat'] = $_POST['cat'];
-	} else { // this is a tag page
+	} elseif ($_POST['tag']) { 
 		$args['tag'] = $_POST['tag'];
-	}
+	} elseif ($_POST['author']) {
+        $args['author'] = $_POST['author'];
+    }
 	$cat_query = new WP_Query($args);
 	// var_dump(print_r($cat_query, true));
 	if($cat_query->have_posts()): 
@@ -507,4 +508,16 @@ function ncff_magazine_function() {
     return $html;
 }
 add_action('init', 'register_shortcodes');
+
+function ncff_order_events($query) {
+    if (!is_admin() ){
+        if ($query->is_post_type_archive( 'events' ) && $query->is_main_query()):
+            $query->set( 'order', 'ASC' );
+            $query->set('meta_key', 'start_date');
+            $query->set('orderby', 'meta_value');
+            $query->set('posts_per_page', '-1');
+        endif;
+    }
+}
+add_action('pre_get_posts', 'ncff_order_events');
         

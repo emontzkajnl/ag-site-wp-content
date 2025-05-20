@@ -49,7 +49,6 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				// print_r($wp_query->query_vars);
 				if ($wp_query->current_post === 6 && function_exists('the_ad_placement') ){
 					echo '</div><div style="display: flex; justify-content: center;">';
 					the_ad_placement('in-content');
@@ -61,19 +60,17 @@ get_header();
 			endwhile; ?>
 			</div><!-- row -->
 			</div><!-- alm-container -->
-			<div style="text-align: center;">
+			
 			<?php $query_vars = $wp_query->query_vars; 
-			$paged = $query_vars['paged'] ? $query_vars['paged'] : 1; ?>
-			<script>
-				// window.document.params.page = "<?php //echo $paged; ?>";
-				// console.log('start');
-				// console.log(window.document);
-			</script>
-			<button data-cat="<?php echo $query_vars['cat']; ?>" data-tag="<?php echo $query_vars['tag'] ?>" data-paged="<?php echo $paged; ?>" class="ncff-recent__btn background__primary " id="load-more-ncff-cats">LOAD MORE</button>
+
+			
+			$paged = $query_vars['paged'] ? $query_vars['paged'] : 1; 
+			if ($wp_query->max_num_pages > 1): ?>
+			<div style="text-align: center;">
+			<button data-cat="<?php echo $query_vars['cat']; ?>" data-tag="<?php echo $query_vars['tag'] ?>" data-author="<?php echo $query_vars['author']; ?>" data-paged="<?php echo $paged; ?>" class="ncff-recent__btn background__primary " id="load-more-ncff-cats">LOAD MORE</button>
 			</div>
 			
-			<?php  //print_r($wp_query->query_vars); //the_posts_navigation();
-			 ?>
+			<?php  endif; ?>
 			</div>
 
 		<?php else :

@@ -143,7 +143,7 @@ ul.comment-list {
 .comment-list li.pingback {
     display: none !important;
 }
-/* INFO BOX */
+/* LEGACY INFO BOX */
 
 .infobox {
     width: 45%;
@@ -312,4 +312,9 @@ div[id^="google_ads_iframe"] {
     background-color: #eee;
 }
 
+.site-main {
+    padding-top: 125px;
+}
+
 @import "elements/comments";
+@import "elements/blocks";

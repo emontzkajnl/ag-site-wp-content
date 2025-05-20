@@ -1,0 +1,56 @@
+@font-face {
+    font-family: AirSoft;
+    src: url('./assets/fonts/AirSoftCond-Regular.otf') format('opentype');
+}  
+
+@font-face {
+    font-family: AirSoftMedium;
+    src: url('./assets/fonts/AirSoftCond-Medium.otf') format('opentype');
+    
+}  
+
+@font-face {
+    font-family: AirSoftBold;
+    src: url('./assets/fonts/AirSoftCond-Bold.otf') format('opentype');
+}  
+
+@font-face {
+    font-family: CoreSerifN;
+    font-weight: normal;
+    src: url('./assets/fonts/CoreSerifN-Regular.otf');
+} 
+
+@font-face {
+    font-family: CoreSerifN;
+    font-weight: bold;
+    src: url('./assets/fonts/CoreSerifN-Bold.otf');
+} 
+
+@font-face {
+    font-family: GardenGrown;
+    font-weight: normal;
+    src: url('./assets/fonts/Garden-Grown.otf');
+} 
+
+@font-face {
+    font-family: Muller;
+    font-weight: 400;
+    src: url('./assets/fonts/MullerNarrow-Regular.otf');
+    // src: url('./assets/fonts/Muller-Regular.otf');
+} 
+@font-face {
+    font-family: Muller;
+    font-weight: 500;
+    src: url('./assets/fonts/MullerNarrow-Medium.otf');
+} 
+@font-face {
+    font-family: Muller;
+    font-weight: 600;
+    src: url('./assets/fonts/MullerNarrow-Bold.otf');
+} 
+
+.handwritten {
+    font-family: GardenGrown, cursive;
+    line-height: 1;
+    font-weight: normal;
+}

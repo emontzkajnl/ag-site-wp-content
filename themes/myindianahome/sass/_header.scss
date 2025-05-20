@@ -1,0 +1,18 @@
+.site-logo {
+    width: 220px;
+    margin-top: -14px;
+}
+
+.search-btn {
+    display: block;
+    min-width: 0;
+    background: transparent;
+    i {
+        color: white;
+    }
+}
+@media all and (min-width: 768px)  {
+    .site-logo {
+        width: 280px;
+    }
+}

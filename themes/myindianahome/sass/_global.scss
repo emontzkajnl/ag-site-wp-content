@@ -1,0 +1,156 @@
+body {
+    font-family: CoreSerifN, serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #111;
+    background-color: white;
+    // line-height: 2;
+    p {
+        font-size: 1.25rem;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    strong, b {
+        font-family: CoreSerifN, serif;
+        font-weight: bold;
+    }
+}
+li {
+    font-size: 1.25rem;
+}
+.site-main {
+    padding-top: 100px;
+    .entry-content {
+        margin: 0;
+    }
+}
+div[class$="-leaderboard"] {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+figcaption {
+    font-size: 1rem;
+    color: #111;
+    font-family: AirSoft, sans-serif;
+    em {
+        font-style: normal;
+    }
+}
+.lightblue-bkgrnd, .offwhite-bkgrnd {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    background-color: $lightblue;
+    max-width: unset; 
+    > * {
+        max-width: 1366px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.wp-block-image {
+    .alignleft {
+        margin-right: 2em;
+    }
+    .alignright {
+        margin-left: 2em;
+    }
+}
+button, .button, input[type="submit"] {
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    text-transform: uppercase;
+    font-family: AirSoft, sans-serif;
+    border-radius: 0;
+
+}
+.section-heading {
+    font-size: 2.75rem;
+    font-family: AirSoft, sans-serif;
+}
+.category-name {
+    font-size: 2.25rem;
+    font-family: GardenGrown, cursive;
+    color: $blue;
+    margin-bottom: 0;
+
+}
+.mih-top-leaderboard {
+    margin-top: 0;
+    br {
+        display: none;
+    }
+}
+.mih-top-leaderboard + br {
+    display: none !important;
+}
+.home {
+    .mih-top-leaderboard {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+.mih-in-content {
+    margin-bottom: 30px;
+}
+.mih-social-icons {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 0;
+    li {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: relative;
+        background-color: white;
+        list-style: none;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+        svg {
+            position: absolute;
+            fill: $blue;
+        }
+        &.facebook {
+            svg {
+                width: 13px;
+                top: 7px;
+                left: 11px;
+
+            }
+        }
+        &.instagram {
+            svg {
+                width: 19px;
+                top: 6px;
+                left: 8px;
+            }
+        }
+        &.twitter {
+            svg {
+                width: 19px;
+                top: 8px;
+                left: 8px;  
+            }
+        }
+        &.pinterest {
+            svg {
+                width: 17px;
+                top: 6px;
+                left: 9px;
+            }
+        }
+    }
+    a {
+        color: transparent;
+    }
+}

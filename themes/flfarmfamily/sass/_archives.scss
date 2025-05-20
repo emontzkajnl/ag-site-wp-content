@@ -1,0 +1,22 @@
+.fff-archive {
+    &__container {
+        border: 1px solid #111;
+        margin-bottom: 50px;
+        .fff-category {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &__text-container {
+        min-height: 235px;
+        text-align: center;
+        padding: 20px;
+    }
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}

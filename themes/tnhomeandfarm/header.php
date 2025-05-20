@@ -1,0 +1,86 @@
+<?php
+/**
+ * The header for our child theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Ag_Sites
+ */
+
+?>
+
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- <link rel="apple-touch-icon" href="<?php //echo get_stylesheet_directory_uri(); ?>/assets/images/Partners_150.jpg">  -->
+	<!-- <link rel="stylesheet" href="https://use.typekit.net/tua3ynd.css">	 -->
+    <link rel="stylesheet" href="https://use.typekit.net/grd0rhb.css">
+
+	<?php wp_head(); ?>
+	
+
+</head>
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ag-sites' ); ?></a>
+
+	<header id="masthead" class="site-header">
+	<div class="nav-container">
+		<div class="site-branding">
+                <a href="<?php echo home_url(); ?>">
+
+				<img class="site-logo"  src="<?php echo get_stylesheet_directory_uri(  ); ?>/assets/images/THF-white.svg" alt="North Carolina Field Family" />
+            </a>
+		</div><!-- .site-branding -->
+
+		
+		<!-- <div class="hamburger menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div> -->
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ag-sites' ); ?></button> -->
+			<nav id="site-navigation" class="main-navigation">
+			<?php
+            wp_nav_menu(
+				array(
+					'theme_location' => 'top_bar_22',
+					'menu_id'        => 'top_bar_22',
+				)
+			);
+			?> 
+		</nav><!-- #site-navigation -->
+		<?php
+		//  $facebook = get_field('facebook', 'options');
+		//  $instagram = get_field('instagram', 'options');
+		//  $pinterest = get_field('pinterest', 'options');
+		//  $youtube = get_field('youtube', 'options');
+		//  $twitter = get_field('twitter', 'options');
+		//  echo '<ul class="newsletter-social">';
+		//  echo $facebook ? '<li class="facebook"><a href="'.esc_url($facebook).'" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/images/social-icons/facebook.svg" /></a></li>' : '';
+		//  echo $instagram ? '<li class="instagram"><a href="'.esc_url($instagram).'" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/images/social-icons/instagram.svg" /></a></li>' : '';
+		//  echo $pinterest ? '<li class="pinterest"><a href="'.esc_url($pinterest).'" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/images/social-icons/pinterest.svg" /></a></li>' : '';
+		//  echo $youtube ? '<li class="youtube"><a href="'.esc_url($youtube).'" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/images/social-icons/youtube.svg" /></a></li>' : '';
+		//  echo $twitter ? '<li class="twitter"><a href="'.esc_url($twitter).'" target="_blank"><img src="'.get_stylesheet_directory_uri().'/assets/images/social-icons/twitter.svg" /></a></li>' : '';
+		//  echo '</ul>';
+		?>
+		
+		<button class="search-btn"><i class="fa fa-search"></i></button>
+		<div class="hamburger menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		
+		</div><!-- nav-container -->
+		
+
+	</header><!-- #masthead -->

@@ -49,6 +49,7 @@
                     color: #fff;
                     font-size: 1.25rem;
                     letter-spacing: .1rem;
+                    padding: 10px;
                     // &:hover {
                     //     color: $olive;
                     // }
@@ -62,7 +63,7 @@
                } 
             }
             ul {
-                top: 19px;
+                top: 35px;
             }
         }
     }
@@ -76,11 +77,14 @@
                 background-image: url('assets/images/white-down-arrow.png');
                 background-repeat: no-repeat;
                 background-position: center center;
-                top: 5px;
+                top: 14px;
                 right: 0;
                 // transform: rotate(0.5turn);
             }
             &:hover {
+                > a {
+                    border-bottom: 1px solid #ccc;
+                }
                 &:after {
                     background-image: url('assets/images/down-arrow.png');
                     transform: rotate(0.5turn);

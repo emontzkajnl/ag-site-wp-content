@@ -1,0 +1,14 @@
+#comments > * {
+    max-width: 750px;
+}
+
+.comment-list {
+    li {
+        margin-bottom: 30px;
+        &.depth-2 {
+            background-color: #f2f2f2;
+            padding: 30px;
+            margin-top: 30px;
+        }
+    }
+}

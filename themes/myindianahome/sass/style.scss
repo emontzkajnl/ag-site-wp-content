@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*
+Theme Name: myindianahome
+Theme URI: https://my-indiana-home.com/
+Author: Journal Communications
+Author URI:     http://jnlcom.com/
+Description: New Child theme for My Indiana Home
+Template: ag-site-theme
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mih
+*/
+
+
+@import "colors";
+@import "fonts";
+@import "global";
+@import "headings";
+@import "header";
+@import "navigation";
+@import "footer";
+@import "blocks";
+@import "pagesandposts";
+@import "archive";
+@import "comments";

@@ -1,0 +1,22 @@
+.info-box {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-width: 250px;
+    max-width: 250px;
+}
+.info-box.aligncenter {
+    min-width: 100%;
+    max-width: 100%;
+}
+.info-box ul li {
+    padding-left: 15px;
+}
+.info-box ul li a {
+    border-bottom: none;
+}
+.info-box h5 {
+    color: #007fbf;
+}

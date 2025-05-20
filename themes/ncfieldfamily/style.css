@@ -19,10 +19,16 @@ Text Domain: ncff
 }
 
 @font-face {
-	font-family: Gabriela, serif;
+	font-family: Gabriela;
 	font-weight: normal;
 	font-style: italic;
 	src: url("./assets/fonts/Gabriela-RegularIt.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gabriela;
+	font-weight: bold;
+	src: url("./assets/fonts/Gabriela-Bold.otf") format("opentype");
 }
 
 @font-face {
@@ -243,6 +249,7 @@ h3, .h3 {
 		color: #fff;
 		font-size: 1.25rem;
 		letter-spacing: .1rem;
+		padding: 10px;
 	}
 	.main-navigation ul > li:hover {
 		background-color: #fff;
@@ -252,7 +259,7 @@ h3, .h3 {
 		background-color: inherit;
 	}
 	.main-navigation ul ul {
-		top: 19px;
+		top: 35px;
 	}
 	.menu-item-has-children > a:after {
 		content: '';
@@ -262,8 +269,11 @@ h3, .h3 {
 		background-image: url("assets/images/white-down-arrow.png");
 		background-repeat: no-repeat;
 		background-position: center center;
-		top: 5px;
+		top: 14px;
 		right: 0;
+	}
+	.menu-item-has-children > a:hover > a {
+		border-bottom: 1px solid #ccc;
 	}
 	.menu-item-has-children > a:hover:after {
 		background-image: url("assets/images/down-arrow.png");
@@ -473,8 +483,8 @@ ul.comment-list .comment-body {
 	font-size: 1.125rem;
 	text-transform: capitalize;
 	font-style: italic;
-	font-weight: bold;
-	font-family: 'Gabriela', serif;
+	font-weight: 500;
+	font-family: Gabriela-MediumIt, serif;
 	color: #647561;
 	margin-bottom: 0;
 }
@@ -492,10 +502,18 @@ ul.comment-list .comment-body {
 	font-size: 0.8em;
 }
 
+.ncff-newsletter__text > .col-12 {
+	padding-left: 2px;
+}
+
 .ncff-newsletter__text-area {
 	text-align: center;
 	padding: 40px 40px 40px 50px;
 	margin-top: 20px;
+}
+
+.ncff-newsletter__text-area .read-connect {
+	margin-bottom: 30px;
 }
 
 .ncff-newsletter__text-area h3 {
@@ -592,7 +610,7 @@ ul.newsletter-social li:last-child {
 }
 
 ul.newsletter-social li a {
-	color: #647561;
+	color: #b7c3b5;
 	position: absolute;
 	left: 50%;
 	top: calc(50% + 2px);
@@ -616,7 +634,7 @@ ul.newsletter-social li a {
 
 .ncff-recent__container {
 	border-top: 1px solid black;
-	padding: 30px 0 20px;
+	padding: 50px 0;
 	text-align: center;
 }
 
@@ -625,8 +643,11 @@ ul.newsletter-social li a {
 	padding-top: 0;
 }
 
-.ncff-recent__text-container p {
+.ncff-recent__text-container {
 	font-family: freight-text-pro, serif;
+}
+
+.ncff-recent__text-container p {
 	line-height: 30px;
 	font-size: 1.375rem;
 	font-weight: 400;
@@ -697,7 +718,11 @@ ul.newsletter-social li a {
 .ncff-popular__text-container {
 	padding: 0 20px 20px;
 	text-align: center;
-	min-height: 175px;
+	min-height: 195px;
+}
+
+.ncff-popular__title {
+	line-height: 1.4;
 }
 
 .ncff-article {
@@ -1098,6 +1123,8 @@ ul.newsletter-social li a {
 .byline, .posted-on {
 	font-family: proxima-nova, sans-serif;
 	font-size: 1rem;
+	display: inline-block;
+	line-height: 1.25rem;
 }
 
 figcaption {
@@ -1109,23 +1136,9 @@ figcaption {
 	border-radius: unset !important;
 }
 
-.post-tags {
-	margin-left: 0;
-	padding-left: 0;
-	margin-bottom: 45px;
-}
-
 .post-tags li {
-	list-style: none;
-	display: inline-block;
-	color: white;
 	background-color: #647561;
-	margin-right: 15px;
-	padding: 0 10px;
-	text-transform: uppercase;
-	font-weight: 200;
 	font-family: proxima-nova, sans-serif;
-	font-size: 1rem;
 }
 
 .infobox-header {
@@ -1275,8 +1288,9 @@ figcaption {
 	background-color: #647561;
 	color: white;
 	cursor: pointer;
-	margin-top: 6px;
+	margin-top: 1px;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .es-title-container {
@@ -1322,14 +1336,19 @@ figcaption {
 }
 
 .event-meta-section p {
-	text-transform: uppercase;
-	font-family: proxima-nova, sans-serif;
+	font-family: freight-text-pro, serif;
 	font-weight: 400;
 	margin: 10px 0;
 }
 
 .event-meta-section p.event-cat {
 	font-weight: 700;
+	text-transform: uppercase;
+	font-family: proxima-nova, sans-serif;
+}
+
+.event-meta-section p.event-cat a {
+	text-decoration: none;
 }
 
 .featured-events {

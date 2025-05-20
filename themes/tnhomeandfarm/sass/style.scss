@@ -1,0 +1,27 @@
+/*
+Theme Name: tnhomeandfarm
+Author: Journal Communications
+Description: Child theme for Ag Sites
+Template: ag-site-theme
+Version: 1.0.0
+Text Domain: tnh
+*/
+
+// Fonts:
+// Lato - regular, bold
+// Source Sans Pro  - regular, semibold
+// Cassia - light, regular
+
+@import "colors";
+@import "fonts";
+@import "global";
+@import "headings";
+@import "header";
+// @import "parent-navigation";
+@import "navigation";
+@import "footer";
+@import "blocks";
+@import "pagesandposts";
+@import "archive";
+@import "comments";
+@import "events";

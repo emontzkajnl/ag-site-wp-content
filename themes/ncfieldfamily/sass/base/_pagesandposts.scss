@@ -58,6 +58,11 @@
 .byline, .posted-on {
     font-family: proxima-nova, sans-serif; 
     font-size: 1rem;
+    display: inline-block;
+    line-height: 1.25rem;
+}
+.posted-on {
+    
 }
 figcaption {
     font-family: proxima-nova, sans-serif; 
@@ -70,21 +75,11 @@ figcaption {
         }
     }
 }
+
 .post-tags {
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 45px;
     li {
-        list-style: none;
-        display: inline-block;
-        color: white;
         background-color: $olive;
-        margin-right: 15px;
-        padding: 0 10px;
-        text-transform: uppercase;
-        font-weight: 200;
         font-family: proxima-nova, sans-serif; 
-        font-size: 1rem;
     }
 }
 

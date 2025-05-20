@@ -1,0 +1,25 @@
+.comment-reply-link {
+    background-color: $blue;
+    color: white;
+    font-family: AirSoft, sans-serif;
+    &:hover, &:visited {
+        color: white;
+    }
+}
+.form-submit {
+    input {
+        background-color: $blue;
+        color: white;
+        font-family: AirSoft, sans-serif;
+    }
+}
+ul.comment-list {
+    li {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #c6c6c6;
+        padding-bottom: 30px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

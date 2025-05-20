@@ -162,7 +162,7 @@ ul.comment-list {
 	display: none !important;
 }
 
-/* INFO BOX */
+/* LEGACY INFO BOX */
 .infobox {
 	width: 45%;
 	display: inline-block;
@@ -344,6 +344,15 @@ div[id^="google_ads_iframe"] {
 
 .comment-body p {
 	max-width: 768px;
+}
+
+.article-callout__text {
+	background-color: #eee;
+}
+
+.jci-infobox__container {
+	border-color: black;
+	background-color: #eee;
 }
 
 /*# sourceMappingURL=style.css.map */

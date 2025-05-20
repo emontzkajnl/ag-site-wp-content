@@ -11,10 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main container">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
+	<header class="page-header">
 				<?php
 					if( function_exists('the_ad_placement') ) { 
 						the_ad_placement('top-leaderboard');
@@ -23,24 +20,19 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 			<!-- set up two columns -->
+			<h1>North Carolina Events Calendar</h1>
 			<div class="wp-block-columns ag-site-sidebar-layout">
 			<div class="wp-block-column">
+		<?php if ( have_posts() ) : ?>
+
+
+			<!-- <div class="wp-block-column"> -->
 			<!-- <div class="col-12 m-col-9"> -->
-				<h1>North Carolina Events Calendar</h1>
+				
 			<?php 
-			// $q = get_queried_object(  );
-			// 		if (is_category(  )) {
-			// 			echo '<h1 class="page-title color__primary">'.$q->cat_name.'</h1>';
-			// 			echo '<p style="font-size: 20px;">'.$q->category_description.'</p>';
-			// 		} elseif (is_author()){
-			// 			echo '<h1 class="page-title color__primary">Posts by '.get_the_author().'</h1>';
-			// 		} else {
-			// 			the_archive_title( '<h1 class="page-title color__primary">', '</h1>' );
-			// 		} 
 
 			echo do_shortcode( '[searchandfilter slug="event-search"]');
 					?>
-					<div class="alm-container">
 				<div class="row">
 
 			
@@ -54,34 +46,46 @@ get_header();
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
 
+				$now = strtotime('now');
+				$is_date_valid = true;
 				$start_date = get_field('start_date');
-				$start_date_obj = DateTime::createFromFormat( 'd/m/Y', $start_date );
-				$start_month = $start_date_obj->format('M');
-				$start_day = $start_date_obj->format('d');
-				$start_year = $start_date_obj->format('Y');
+				$start_date_obj = strtotime($start_date);
+				$start_month = date('M', $start_date_obj);
+				$start_day = date('d', $start_date_obj);
+				$start_year = date('Y', $start_date_obj);
 				$end_date = get_field('end_date');
 				$location = get_field('location');
 				
 				$date_string = $start_month.' '.$start_day;
-				if ($end_date && $end_date != $start_date) {
-					$end_date_obj = DateTime::createFromFormat( 'd/m/Y', $end_date ); 
-					$end_month = $end_date_obj->format('M');
-					$end_day = $end_date_obj->format('d');
-					if ($start_month == $end_month ) {
-						$date_string .= ' - '.$end_day.', '.$start_year;
-					} else {
-						$end_year = $end_date_obj->format('Y');
-						$date_string .= $start_year == $end_year ? ' - '.$end_month.' '.$end_day.', '.$end_year : ', '.$start_year.' - '.$end_month.' '.$end_day.', '.$end_year;
-					}
+				if ($end_date && $start_date != $end_date) {
+					$end_date_obj = strtotime($end_date);
+					if ($start_date_obj != $end_date_obj) {
+						$end_month = date('M', $end_date_obj);
+						$end_day = date('d', $end_date_obj);
+						if ($start_month == $end_month ) {
+							$date_string .= ' - '.$end_day.', '.$start_year;
+						} else {
+							$end_year = date('Y', $end_date_obj);
+							$date_string .= $start_year == $end_year ? ' - '.$end_month.' '.$end_day.', '.$end_year : ', '.$start_year.' - '.$end_month.' '.$end_day.', '.$end_year;
+						}
+					} 
 				} else {
 					$date_string .= ', '.$start_year;
 				}
+				if ($end_date) {
+					if ($end_date_obj < $now) {$is_date_valid = false;}
+				} elseif ($start_date_obj < $now) {
+					$is_date_valid = false;
+				} else {
+					$is_date_valid = true;
+				}
+				 if ($is_date_valid):
 				?>
 
 				<div class="col-12 m-col-12 ncff-event-list">
 					<!-- <div> -->
 					<div class="date-cube">
-						<?php echo '<span class="month">'.$start_date_obj->format('M').'</span><br /><span class="day">'.$start_date_obj->format('d').'</span>'; ?>
+						<?php echo '<span class="month">'.$start_month.'</span><br /><span class="day">'.$start_day.'</span>'; ?>
 					</div>
 					<!-- </div> -->
 					<div class="ncff-event-list__text-area">
@@ -90,57 +94,29 @@ get_header();
 					<p class="ncff-event-list__location"><?php echo $location; ?>, NC</p>
 					</div>
 
-				
-				<?php 
+				</div> <!-- event list-->
 
-// Load field value.
-// $date_string = get_field( 'start_date' );
-
-// Create DateTime object from value (formats must match).
-// $date = DateTime::createFromFormat( 'Ymd', $date_string );
-
-// Output current date in custom format.
-?>
-<!-- <p>Event start date: <?php //echo $date->format( 'j M Y' ); ?></p> -->
-<?php 
-
-// Increase by 1 day and output again.
-
-?>
-
-				</div> 
-
-				
-				
-
-			<?php endwhile; ?>
+			<?php endif; // end if date valid
+			endwhile; ?>
 			</div><!-- row -->
-			</div><!-- alm-container -->
-			<div style="text-align: center;">
-			<?php $query_vars = $wp_query->query_vars; 
-			$paged = $query_vars['paged'] ? $query_vars['paged'] : 1; ?>
-			<script>
-				// window.document.params.page = "<?php //echo $paged; ?>";
-				// console.log('start');
-				// console.log(window.document);
-			</script>
-			<!-- <button data-cat="<?php //echo $query_vars['cat']; ?>" data-tag="<?php //echo $query_vars['tag'] ?>" data-paged="<?php //echo $paged; ?>" class="ncff-recent__btn background__primary " id="load-more-ncff-cats">LOAD MORE</button> -->
+
+		<?php else : ?>
+			<div class="entry-content">
+				<div class="on-page-search">
+				<p><?php esc_html_e( 'Sorry, we can\'t find what you\'re looking for. Try searching below:', 'ag-sites' ); ?></p>
+					<?php
+						get_search_form();
+						?>
+				</div>
 			</div>
 			
-			<?php  //print_r($wp_query->query_vars); //the_posts_navigation();
-			 ?>
-			</div>
 
-		<?php else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+		<?php endif; ?>
+		</div> <!-- wp-block-column -->
 		<div class="wp-block-column">
 		<?php get_sidebar('category');  ?>
-		</div>
-    </div>
+		</div> <!-- wp-block-column -->
+    </div><!-- wp-block-columns -->
         <?php //get_template_part( 'template-parts/newsletter'); ?>
 
 	</main><!-- #main -->

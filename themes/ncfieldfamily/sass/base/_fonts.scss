@@ -16,10 +16,16 @@
 }
 
 @font-face {
-    font-family: Gabriela, serif;
+    font-family: Gabriela;
     font-weight: normal;
     font-style: italic;
     src: url("./assets/fonts/Gabriela-RegularIt.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gabriela;
+    font-weight: bold;
+    src: url("./assets/fonts/Gabriela-Bold.otf") format("opentype");
 }
 
 @font-face {

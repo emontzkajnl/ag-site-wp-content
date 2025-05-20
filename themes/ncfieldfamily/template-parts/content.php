@@ -8,7 +8,8 @@
  */
 
 ?>
-<?php if ( is_singular() ) : ?>
+<?php if ( is_singular() ) : 
+	?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('entry-content '); ?>>
 	<?php if( function_exists('the_ad_placement') ) { 
 			the_ad_placement('top-leaderboard');
@@ -43,8 +44,10 @@
                 echo '<p class="ncff-excerpt">'.get_the_excerpt(  ).'</p>';
 				}
 				ncff_posted_by();
-				 echo ' | ';
-				ag_sites_posted_on();
+				 echo '<br />';
+				ag_sites_posted_on(); 
+				// echo ge/t_the_date( );
+				// echo get_the_modified_date();
 				if (function_exists( 'ADDTOANY_SHARE_SAVE_KIT' )) {
 					echo do_shortcode('[addtoany url="' . esc_url(get_the_permalink(get_the_ID())).'" ]');
 				}
@@ -52,6 +55,7 @@
 				// if ( function_exists('yoast_breadcrumb') ) {
 				// 	yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 				//   }
+				
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -76,7 +80,7 @@
 		if ($posttags) {
 			echo '<ul class="post-tags">';
 		  foreach($posttags as $tag) {
-			echo '<a href="'.get_term_link($tag->term_id).'"><li>'.$tag->name.'</li></a>'; 
+			echo '<li><a href="'.get_term_link($tag->term_id).'">'.$tag->name.'</a></li>'; 
 		  }
 		  echo '</ul>';
 		} ?>

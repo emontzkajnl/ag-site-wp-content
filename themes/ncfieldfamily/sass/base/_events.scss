@@ -111,8 +111,9 @@
                     background-color: $olive;
                     color: white;
                     cursor: pointer;
-                    margin-top: 6px;
+                    margin-top: 1px;
                     padding-top: 15px;
+                    padding-bottom: 15px;
                 }
             }
         }
@@ -152,12 +153,16 @@
 .event-meta-section {
     margin-bottom: 40px;
     p {
-        text-transform: uppercase;
-        font-family: proxima-nova, sans-serif;
+        font-family: freight-text-pro, serif;
         font-weight: 400;
         margin: 10px 0;
         &.event-cat {
             font-weight: 700;
+            text-transform: uppercase;
+            font-family: proxima-nova, sans-serif;
+            a {
+                text-decoration: none;
+            }
         }
     }
 }

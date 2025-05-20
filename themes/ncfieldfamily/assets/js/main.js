@@ -67,6 +67,7 @@
       action: "loadMoreNcffCats",
       cat: btn.data('cat'),
       tag: btn.data('tag'),
+      author: btn.data('author'),
       page: currentPage,
       // page: window.params.currentpage,
       url: params.ajaxurl,
@@ -88,7 +89,7 @@
           console.log('no res');
           btn.hide();
         }
-        if (currentPage >= maxpages) {
+        if (currentPage > maxpages) {
           btn.hide();
         }
         

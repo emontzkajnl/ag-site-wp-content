@@ -67,7 +67,7 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-		<?php get_template_part('template-parts/social-icons'); ?>
+		<?php //get_template_part('template-parts/social-icons'); ?>
 		<button class="search-btn"><i class="fa fa-search"></i></button>
 		
 		</div><!-- nav-container -->

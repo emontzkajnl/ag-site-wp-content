@@ -1,0 +1,201 @@
+
+.thf-event-list {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $darkgreen;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    &:first-child {
+        border-top: 1px solid $darkgreen;
+    }
+    &__text-area {
+        padding-left: 30px;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.875rem;
+    }
+    &__date {
+        margin-top: 0;
+        font-family: Lato, sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 1.25rem;
+    }
+    &__location {
+        margin-top: 0;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1.25rem;
+    }
+}
+.date-cube {
+    background-color: $darkgreen;
+    // padding: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 72px;
+    height: 75px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    .month {
+        font-family: Lato, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .day {
+        font-family: Lato, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+}
+.searchandfilter {
+    select.sf-input-select {
+        background-color: white;
+    }
+}
+.thf-event-filter {
+    padding: 50px;
+    &__title {
+        text-align: center;
+    }
+    .sf-field-post-meta-start_date {
+        flex-basis: 66%;
+        padding-right: 0;
+    }
+    
+    .sf_date_field {
+        > li {
+            flex-basis: 50%;
+            padding-right: 25px;
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.searchandfilter {
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            flex-basis: 33.33%;
+            padding-right: 25px;
+            
+            label {
+                width: 100%;
+            }
+            select {
+                width: 100%;
+                min-width: 100%;
+                padding: 10px 0;
+                text-indent: 10px;
+                font-family: Lato, sans-serif;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                background-color: transparent;
+                background: url('assets/images/down-arrow.png') no-repeat right transparent;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: '';
+            }
+            input {
+                font-family: Lato, sans-serif;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                color: black;
+                padding: 10px 0;
+                
+                &::placeholder {
+                    text-indent: 15px;
+                }
+                &.sf-datepicker {
+                    background: url('assets/images/down-arrow.png') no-repeat right white;
+                }
+            }
+            option {
+                font-family: Lato, sans-serif;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+            }
+            &.sf-field-reset {
+               
+                input {
+                    color: black;
+                    background-color: white;
+                    border: none;
+                    font-family: Lato, sans-serif;
+                    text-transform: uppercase;
+                    font-size: 1.125rem;
+                    cursor: pointer;
+                }
+            }
+            &.sf-field-submit {
+                input {
+                    width: 100%;
+                    background-color: $darkgreen;
+                    color: white;
+                    cursor: pointer;
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                }
+            }
+        }
+    }
+}
+.es-title-container {
+    display: flex;
+    align-items: center;
+    .date-cube {
+        margin-right: 20px;
+    }
+}
+.event-meta {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    .event-cat {
+        margin-left: 60px;
+        margin-right: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+.event-cat {
+    font-weight: 700;
+    font-family: Lato, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.back-to-event-list {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+.event-meta-section {
+    margin-bottom: 40px;
+    p {
+        font-family: freight-text-pro, serif;
+        font-weight: 400;
+        margin: 10px 0;
+        &.event-cat {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: Lato, sans-serif;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

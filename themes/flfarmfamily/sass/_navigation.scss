@@ -1,0 +1,109 @@
+.nav-container {
+    max-width: 1450px;
+    &.toggled {
+        ul.newsletter-social {
+            display: flex;
+            margin-top: 30px;
+        }
+    }
+    ul.newsletter-social {
+        margin-bottom: 0;
+        padding-left: 0;
+        display: none;
+    }
+}
+.bar {
+    background-color: #fff;
+
+}
+@media screen and (max-width: 1180px) {
+    .nav-container {
+        &.toggled {
+            background-color: $darkblue;
+            a {
+                color: white;
+            }
+           
+            .main-navigation {
+                li {
+                    border-bottom: 1px solid white;
+                    &.menu-item-has-children {
+                        &:after {
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media screen and (min-width: 1181px) {
+    .main-navigation {
+        ul {
+            > li {
+                font-family: Montserrat, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                a {
+                    color: #fff;
+                    font-size: 1.375rem;
+                    letter-spacing: .1rem;
+                    padding: 10px;
+                    &:hover {
+                        color: $darkblue;
+                    }
+                }
+               &:hover {
+                   background-color: #fff;
+                   a {
+                       color: $darkblue;
+                       background-color: inherit;
+                   }
+               } 
+            }
+            ul {
+                top: 35px;
+                a {
+                    width: 325px;
+                }
+            }
+        }
+    }
+    .menu-item-has-children {
+        > a {
+            &:after {
+                content: '';
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                background-image: url('assets/images/white-down-arrow.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                top: 14px;
+                right: 0;
+                // transform: rotate(0.5turn);
+            }
+            &:hover {
+                > a {
+                    border-bottom: 1px solid #ccc;
+                }
+                &:after {
+                    background-image: url('assets/images/down-arrow.png');
+                    transform: rotate(0.5turn);
+                }
+            }
+        }
+    }
+    .nav-container {
+        &.toggled {
+            background-color: #e9ede8;
+          
+        }
+        ul.newsletter-social {
+            display: flex;
+        }
+    }
+}
+
+// .main-navigation ul ul a

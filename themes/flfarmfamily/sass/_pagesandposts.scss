@@ -1,0 +1,97 @@
+.section-heading {
+    color: $darkblue;
+    font-family: "kepler-std", serif;
+    font-size: 3.125rem;
+    font-weight: 600;
+    border-bottom: 1px solid $darkblue;
+}
+.archive {
+    .section-heading {
+        text-align: center;
+        font-size: 3.75rem;
+        line-height: 1;
+        margin-top: 0;
+    }
+}
+
+.offwhite-background {
+    background-color: #F0EFEE;
+}
+
+#breadcrumbs {
+    font-size: 1rem;
+    a {
+        text-decoration: none;
+        color: $darkgray;
+    }
+    span {
+        text-transform: uppercase;
+        &.breadcrumb_last {
+            a {
+                text-decoration: underline;
+                color: $darkblue;
+            }
+        }
+    }
+    
+}
+
+.byline, .posted-on {
+    color: $darkblue;
+    font-size: .8rem;
+    a {
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+.wp-caption .wp-caption-text {
+    color: $darkblue;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.wp-block-pullquote {
+    text-align: center;
+    margin: 0 auto;
+}
+blockquote {
+    color: $darkblue;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    padding: 0 30px;
+    max-width: 750px;
+    cite {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+}
+
+.related-articles {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: unset;
+    .comment-reply-title {
+        color: #123560;
+        font-family: "kepler-std", serif;
+        font-size: 3.125rem;
+        font-weight: 600;
+    }
+}
+
+.post-tags {
+    li {
+        background-color: $darkblue;
+        a {
+            color: #fff;
+            &:hover, &:visited, &:active {
+                color: #fff;
+            }
+        }
+    }
+}

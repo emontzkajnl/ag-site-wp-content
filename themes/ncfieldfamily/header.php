@@ -68,17 +68,17 @@
 			?> 
 		</nav><!-- #site-navigation -->
 		<?php
-		 $facebook = get_field('facebook', 'options');
-		 $instagram = get_field('instagram', 'options');
-		 $pinterest = get_field('pinterest', 'options');
-		 $youtube = get_field('youtube', 'options');
-		 echo '<ul class="newsletter-social">';
-		 //echo $facebook ? '<li class="facebook background__primary"><a href="'.esc_url($facebook).'" target="_blank"><i class="fab fa-facebook-f"></i></a></li>' : '';
-		 echo $facebook ? '<li class="facebook"><a href="'.esc_url($facebook).'" target="_blank"><i class="fab fa-facebook-f"></i></a></li>' : '';
-		 echo $instagram ? '<li class="instagram"><a href="'.esc_url($instagram).'" target="_blank"><i class="fab fa-instagram"></i></a></li>' : '';
-		 echo $pinterest ? '<li class="pinterest"><a href="'.esc_url($pinterest).'" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>' : '';
-		 echo $youtube ? '<li class="youtube"><a href="'.esc_url($youtube).'" target="_blank"><i class="fab fa-youtube"></i></a></li>' : '';
-		 echo '</ul>';
+		//  $facebook = get_field('facebook', 'options');
+		//  $instagram = get_field('instagram', 'options');
+		//  $pinterest = get_field('pinterest', 'options');
+		//  $youtube = get_field('youtube', 'options');
+		//  echo '<ul class="newsletter-social">';
+		//  //echo $facebook ? '<li class="facebook background__primary"><a href="'.esc_url($facebook).'" target="_blank"><i class="fab fa-facebook-f"></i></a></li>' : '';
+		//  echo $facebook ? '<li class="facebook"><a href="'.esc_url($facebook).'" target="_blank"><i class="fab fa-facebook-f"></i></a></li>' : '';
+		//  echo $instagram ? '<li class="instagram"><a href="'.esc_url($instagram).'" target="_blank"><i class="fab fa-instagram"></i></a></li>' : '';
+		//  echo $pinterest ? '<li class="pinterest"><a href="'.esc_url($pinterest).'" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>' : '';
+		//  echo $youtube ? '<li class="youtube"><a href="'.esc_url($youtube).'" target="_blank"><i class="fab fa-youtube"></i></a></li>' : '';
+		//  echo '</ul>';
 		?>
 		
 		<button class="search-btn"><i class="fa fa-search"></i></button>
